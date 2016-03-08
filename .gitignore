@@ -17,3 +17,6 @@
 /tmp
 .vagrant
 .ruby-version
+
+config/database.yml
+
