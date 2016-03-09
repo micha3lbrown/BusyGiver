@@ -17,6 +17,7 @@
 /tmp
 .vagrant
 .ruby-version
+.DS_Store
 
 config/database.yml
 

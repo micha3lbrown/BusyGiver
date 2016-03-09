@@ -3,6 +3,11 @@ h1 Listing users
 table
   thead
     tr
+      th id
+      th First Name
+      th Last Name
+      th Email
+      th Joined
       th
       th
       th
@@ -10,6 +15,11 @@ table
   tbody
     - @users.each do |user|
       tr
+        td = user.id
+        td = user.first_name
+        td = user.last_name
+        td = user.email
+        td = user.created_at
         td = link_to 'Show', user
         td = link_to 'Edit', edit_user_path(user)
         td = link_to 'Destroy', user, data: {:confirm => 'Are you sure?'}, :method => :delete
