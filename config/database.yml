@@ -1,7 +1,7 @@
 default: &default
   host: localhost
   username: root
-  password: root
+  password: G3n3r0usButBusy
   adapter: mysql2
   pool: 5
   timeout: 5000
