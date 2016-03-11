@@ -7,6 +7,10 @@ gem 'rails', '4.2.4'
 gem 'mysql2', '~> 0.3.18'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Using Foundation 6 as Frontend Framework
+gem 'foundation-rails', '~>5.5'
+# I want that form support
+gem 'foundation_rails_helper'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -25,7 +29,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # added for 64-bit compatibility
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 

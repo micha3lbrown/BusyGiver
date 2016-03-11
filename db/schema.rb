@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160308043928) do
+ActiveRecord::Schema.define(version: 20160311033346) do
+
+  create_table "events", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.integer  "user_id",     limit: 4
+    t.text     "description", limit: 65535
+    t.string   "url",         limit: 255
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name",      limit: 255

@@ -38,7 +38,6 @@ GEM
       tzinfo (~> 1.1)
     arel (6.0.3)
     bcrypt (3.1.11)
-    bcrypt (3.1.11-x86-mingw32)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -64,6 +63,15 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    foundation-rails (5.5.3.2)
+      railties (>= 3.1.0)
+      sass (>= 3.3.0, < 3.5)
+    foundation_rails_helper (1.1.0)
+      actionpack (~> 4.1)
+      activemodel (~> 4.1)
+      activesupport (~> 4.1)
+      railties (~> 4.1)
+      tzinfo (~> 1.2, >= 1.2.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -84,13 +92,10 @@ GEM
     minitest (5.8.4)
     multi_json (1.11.2)
     mysql2 (0.3.20)
-    mysql2 (0.3.20-x86-mingw32)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.0.2)
     nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
-    nokogiri (1.6.7.2-x86-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -160,8 +165,6 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2016.1)
-      tzinfo (>= 1.0.0)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -173,13 +176,14 @@ GEM
 
 PLATFORMS
   ruby
-  x86-mingw32
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   byebug
   capistrano-rails
   coffee-rails (~> 4.1.0)
+  foundation-rails (~> 5.5)
+  foundation_rails_helper
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.18)

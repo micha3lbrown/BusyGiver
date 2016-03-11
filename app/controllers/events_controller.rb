@@ -1,13 +1,6 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
-  def home
-  end
-
-  def capen
-  end
-
-
   # GET /events
   # GET /events.json
   def index
@@ -76,6 +69,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.fetch(:event, {})
+      params.require(:event).permit(:name, :description, :url, :start_date, :end_date)
     end
 end
