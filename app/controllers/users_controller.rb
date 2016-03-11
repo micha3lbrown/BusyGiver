@@ -4,6 +4,10 @@ class UsersController < ApplicationController
   def home
   end
 
+  def capen
+  end
+
+
   # GET /users
   # GET /users.json
   def index
