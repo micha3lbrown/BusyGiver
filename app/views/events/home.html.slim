@@ -1,0 +1,32 @@
+h1 Busy Giver
+
+p I want to
+  <select>
+    <option value="default">do anything</option>
+    <option value="Eat">Eat</option>
+  </select>
+
+| for good in
+
+  <select>
+    <option value="default">the world</option>
+    <option value="default">Raleigh</option>
+  </select>
+      
+table
+  thead
+    tr
+      th Name
+      th Description
+      th URL
+      th start_date
+      th end_date
+
+  tbody
+    - @events.each do |event|
+      tr
+        td = event.name
+        td = event.description
+        td = event.url
+        td = event.start_date
+        td = event.end_date
