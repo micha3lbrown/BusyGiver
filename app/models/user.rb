@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :events, inverse_of: :users
-
+  has_many :organizations
   has_secure_password
 
   validates :first_name, presence: true, length: {minimum: 2}
